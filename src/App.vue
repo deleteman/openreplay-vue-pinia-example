@@ -69,10 +69,12 @@
 import { computed, defineComponent, onMounted, ref } from 'vue'
 import { Product, useProductStore } from './store/products'
 import { useCartStore } from './store/cart'
+import {getStore} from './store/storesManager.js'
 
 export default defineComponent({
   setup() {
     const productStore = useProductStore()
+    getStore(productStore)
     const loading = ref(true)
 
     onMounted(async () => {
