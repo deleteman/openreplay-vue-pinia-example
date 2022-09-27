@@ -1,14 +1,14 @@
 
-let storePlugin = null;
+let storeWrapper = null;
 
 export function saveStore(s) {
     console.log("saving...")
     console.log(s)
-    storePlugin = s;
+    storeWrapper = s;
 }
 
 export function getStore(store) {
     console.log("Returning store plugin")
-    console.log(storePlugin)
-    return storePlugin(store);
+    console.log(storeWrapper)
+    return storeWrapper(store);
 }

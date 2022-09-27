@@ -73,6 +73,10 @@ import {getStore} from './store/storesManager.js'
 
 export default defineComponent({
   setup() {
+    /*
+    const examplePiniaStore = useExamplePiniaStore()
+    namedStoreWrapper(examplePiniaStore)
+    */
     const productStore = useProductStore()
     getStore(productStore)
     const loading = ref(true)

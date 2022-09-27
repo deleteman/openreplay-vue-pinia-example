@@ -17,7 +17,7 @@ export function startTracker(config) {
     console.log("Project key used: ", config.projectKey)
     const trackerConfig = {
         projectKey: config.projectKey,
-        // ingestPoint: config.ingestPoint,
+         //ingestPoint: config.ingestPoint,
         __DISABLE_SECURE_MODE: true
     }
 
