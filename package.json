@@ -9,8 +9,8 @@
   "dependencies": {
     "@openreplay/tracker": "^4.0.2",
     "@openreplay/tracker-vuex": "^4.0.2",
-    "pinia": "^2.0.0-alpha.7",
-    "vue": "^3.0.5"
+    "pinia": "^2.0.22",
+    "vue": "^3.2.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.21",

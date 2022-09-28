@@ -9,6 +9,6 @@ export function saveStore(s) {
 
 export function getStore(store) {
     console.log("Returning store plugin")
-    console.log(storeWrapper)
-    return storeWrapper(store);
+    //console.log(storeWrapper)
+    return storeWrapper;
 }

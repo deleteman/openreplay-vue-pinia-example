@@ -78,8 +78,8 @@ export default defineComponent({
     namedStoreWrapper(examplePiniaStore)
     */
     const productStore = useProductStore()
-    getStore(productStore)
     const loading = ref(true)
+    const storeWrapper = getStore()
 
     onMounted(async () => {
       await productStore.fetchAll()
@@ -88,6 +88,7 @@ export default defineComponent({
 
     const cartStore = useCartStore()
 
+    storeWrapper(cartStore)
     return {
       products: computed(() => productStore.list),
       cart: computed(() => cartStore.formattedCart),
